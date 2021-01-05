@@ -1,16 +1,4 @@
 import discord
-import os
-import pyscreenshot as ImageGrab
-import pyautogui
-import time
-import sys
-from PIL import Image
-from datetime import datetime
-import xlsxwriter
-import re
-from tinydb import TinyDB, Query
-import datetime
-
 
 guild_id = 
 color_anchor = 
