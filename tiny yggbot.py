@@ -11,13 +11,16 @@ import re
 from tinydb import TinyDB, Query
 import datetime
 
+
 guild_id = 
 color_anchor = 
 category_anchor = 
 class_anchor = 
 everyone_id =
 bot_token = 
-command_channel = 
+command_channel_id = 
+command_channel_name =
+
 
 class MyClient(discord.Client):
     async def on_ready(self):
@@ -28,7 +31,7 @@ class MyClient(discord.Client):
             return
         else:
             #Segregates the channel functions, deep_city is used exclusively for role management
-            if (str(message.channel) == "deep_city") or (str(message.channel.id) == command_channel):
+            if (str(message.channel) == command_channel_name) or (str(message.channel.id) == command_channel_id):
 
                 #Tries to split the command, if it unable to, or if any variables in acceptable_commands are 
                 #absent within the first part chain terminates and user is told to rewrite request
