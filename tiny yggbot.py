@@ -9,7 +9,6 @@ bot_token =
 command_channel_id = 
 command_channel_name =
 
-
 class MyClient(discord.Client):
     async def on_ready(self):
         print("Tiny Ygg is alive!\nPlease reach out to Myon#5180 if you need any assistance.")
